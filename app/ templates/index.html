@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tải video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Tải video từ YouTube và TikTok</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="URL video" required>
+        <select name="platform" required>
+            <option value="youtube">YouTube</option>
+            <option value="tiktok">TikTok</option>
+        </select>
+        <button type="submit">Tải xuống</button>
+    </form>
+</body>
+</html>
